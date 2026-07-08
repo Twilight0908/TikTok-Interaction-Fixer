@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "priority": 100,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "requestDomains": [
+        "mon.tiktok.com",
+        "mcs.tiktok.com",
+        "log.tiktok.com",
+        "mon.tiktokv.com",
+        "mcs.tiktokv.com",
+        "mon.byteoversea.com",
+        "mcs.byteoversea.com"
+      ],
+      "resourceTypes": ["xmlhttprequest", "ping", "image", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 100,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "||byteoversea.com/service/2/app_log",
+      "resourceTypes": ["xmlhttprequest", "ping", "image", "other"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 100,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*telemetry*",
+      "requestDomains": ["tiktok.com", "tiktokv.com", "byteoversea.com", "ibytedtos.com"],
+      "resourceTypes": ["xmlhttprequest", "ping", "image", "other"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 100,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*slardar*",
+      "requestDomains": ["tiktok.com", "tiktokv.com", "byteoversea.com", "ibytedtos.com"],
+      "resourceTypes": ["xmlhttprequest", "ping", "image", "other"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 100,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "urlFilter": "*analytics*",
+      "requestDomains": ["tiktok.com", "tiktokv.com", "byteoversea.com", "ibytedtos.com"],
+      "resourceTypes": ["xmlhttprequest", "ping", "image", "other"]
+    }
+  }
+]
